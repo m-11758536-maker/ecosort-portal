@@ -124,7 +124,7 @@ function login() {
     };
 
     document.getElementById("login-area").style.display = "none";
-    document.getElementById("portal-area").style.display = "block";
+    document.getElementById("portal-area").style.display = "grid";
 
     document.getElementById("admin-label").textContent =
         "Logged in as: " + username + " | " + account.country;
@@ -225,7 +225,7 @@ function showMessage(country) {
         }
 
         categoryList +=
-            "<li>" +
+            "<li class='category-item' style='--bin-color:" + color + ";'>" +
             "<span style='display:inline-block; width:14px; height:14px; background-color:" +
             color + "; margin-right:8px; border-radius:3px;'></span>" +
             category +
@@ -415,7 +415,7 @@ function showSummary(country) {
         const color = binColors[country][category] || "gray";
 
         summaryList +=
-            "<li>" +
+            "<li class='category-item' style='--bin-color:" + color + ";'>" +
             "<span style='display:inline-block; width:14px; height:14px; background-color:" +
             color + "; margin-right:8px; border-radius:3px;'></span>" +
             category +
