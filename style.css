@@ -1,0 +1,350 @@
+body{
+	background-color: beige;
+	font-family: Georgia, serif;
+	line-height: 1.4;
+}
+.header {
+    background-color: darkgreen;
+	color:white;
+    padding: 30px;
+	text-align:center;
+	margin-bottom: 30px;
+}
+h1 {
+    color: white;
+	font-size: 40px;
+	
+}
+button {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    margin: 10px;
+    width: 160px;
+	height:50px;
+	transition: background-color 0.3s;
+}
+button:hover{
+	background-color:#527A5A;
+}
+
+.country-section {
+	background-color:white;
+	padding:20px;
+	border-radius:12px;
+	
+	max-width: 600px;
+	margin: 30px auto;
+	text-align: center;
+	border: 1px solid #D5DDCF;
+}
+
+#section-title{
+	color:darkgreen;
+	font-weight: bold;
+}
+#config-area {
+    background-color: white;
+    max-width: none;
+    margin: 30px auto;
+    padding: 35px;
+    border-radius: 15px;
+    border: 1px solid #D5DDCF;
+}
+#summary-area {
+    background-color: white;
+    max-width: none;
+    margin: 30px auto;
+    padding: 35px;
+    border-radius: 15px;
+    border: 1px solid #D5DDCF;
+}
+#config-area button {
+    width: auto;
+    min-width: 90px;
+    height: 40px;
+    padding: 8px 18px;
+    margin: 5px;
+}
+#config-area ul {
+    list-style: none;
+    padding: 0;
+}
+
+#config-area li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding: 12px;
+    background-color: #F4F8F2;
+    border: 1px solid #D5DDCF;
+    border-radius: 10px;
+
+}
+#config-area,
+#summary-area {
+    font-family: Arial, sans-serif;
+    color: #26382C;
+}
+#summary-area {
+    margin-top: 40px;
+}
+
+#config-area h2,
+#summary-area h2,
+#config-area h3,
+#summary-area h3 {
+    color: #166534;
+}
+#summary-area ul {
+    list-style: none;
+    padding: 0;
+}
+
+#summary-area li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #F4F8F2;
+    border-radius: 10px;
+}
+.summary-stats {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.stat-card {
+    flex: 1;
+    background-color: #F0FAF3;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #D5DDCF;
+    text-align: center;
+	transition: background-color 0.3s;
+}
+.stat-card:hover {
+    background-color: #E5F5E9;
+}
+
+.stat-card h3 {
+    color: #166534;
+    font-size: 28px;
+    margin: 0 0 10px;
+}
+
+.stat-card p {
+    color: #64748B;
+    margin: 0;
+}
+#export-button {
+    display: block;
+    width: 100%;
+    height: 55px;
+    background-color: #166534;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 25px 0 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#export-button:hover {
+    background-color: #14532D;
+}
+#message {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    color: #64748B;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+#config-area h2,
+#summary-area h2 {
+    font-size: 26px;
+    border-bottom: 2px solid #D5DDCF;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+/* ===== First Section Improvements ===== */
+
+/* Header */
+.header {
+    background-color: #006400;
+    color: white;
+    padding: 22px 30px;
+    text-align: center;
+    margin-bottom: 25px;
+    border-radius: 0 0 12px 12px;
+}
+
+.header h1 {
+    color: white;
+    font-size: 36px;
+    margin: 12px 0 25px;
+}
+
+/* Country Selection Card */
+.country-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 760px;
+    box-sizing: border-box;
+    margin: 30px auto 20px;
+    text-align: center;
+    border: 1px solid #D5DDCF;
+    box-shadow: 0 3px 12px rgba(0, 80, 0, 0.05);
+}
+
+/* Country Section Title */
+#section-title {
+    color: #166534;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Country Selection Description */
+.country-section p {
+    color: #374151;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+/* Country Buttons */
+.country-section button {
+    background-color: #006400;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid #A5B5A5;
+    border-radius: 10px;
+    margin: 8px 10px;
+    width: 160px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.country-section button:hover {
+    background-color: #527A5A;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 80, 0, 0.15);
+}
+
+/* Message */
+#message {
+    max-width: 800px;
+    margin: 18px auto 30px;
+    text-align: center;
+    color: #64748B;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .country-section {
+        width: 92%;
+        padding: 22px 15px;
+    }
+
+    .country-section button {
+        width: 80%;
+        margin: 7px auto;
+    }
+}
+
+#login-area {
+    background-color: white;
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 15px;
+    border: 1px solid #D5DDCF;
+    font-family: Arial, sans-serif;
+    color: #26382C;
+}
+
+#login-area h2 {
+    color: #166534;
+    text-align: center;
+    border-bottom: 2px solid #D5DDCF;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+#login-area label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#login-area input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #D5DDCF;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+#login-area button {
+    display: block;
+    width: 100%;
+    margin: 25px 0 0;
+    background-color: #166534;
+    border: none;
+    cursor: pointer;
+}
+
+#login-area button:hover {
+    background-color: #14532D;
+}
+
+#login-message {
+    color: #B91C1C;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#admin-info {
+    max-width: 100%;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #D5DDCF;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+}
+
+#admin-info button {
+    width: auto;
+    margin: 0;
+}
+
+#export-container {
+    max-width: none;
+    margin: 30px 0;
+}
